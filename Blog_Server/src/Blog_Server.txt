@@ -1,0 +1,17 @@
+页面
+com.Blog_Server.web.Servlet	web层
+com.Blog_Server.Service	业务层
+com.Blog_Server.Dao		数据层
+com.Blog_Server.domain	JavaBean
+
+功能：
+	1.登录
+		* 提交表单数据到Servlet  Servlet将表单数据封装成JavaBean对象
+		* Servlet将JavaBean对象传递给Service进行业务逻辑
+		* Service依赖Dao来处理业务并返回结果给Servlet
+		* Servlet将结果返回页面  页面进行输出
+		
+login提交表单信息>>>servlet将提交信息封装成user对象传给service>>>
+service确定需要处理的业务>>>dao调用dbhelp与数据库进行交互，返回信息给service>>>
+service将业务处理完毕后的信息提交给servlet>>>servlet通过提交用户的操作得到的结果>>>
+login通过结果对页面进行显示

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<!-- 连接四大参数配置 -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/blog</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">a</property>
+		<!-- 池参数配置 -->
+		<property name="acquireIncrement">3</property>
+		<property name="initialPoolSize">10</property>
+		<property name="minPoolSize">2</property>
+		<property name="maxPoolSize">10</property>
+	</default-config>
+	
+	<name-config name="oracle-config">
+		<!-- 连接四大参数配置 -->
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/scott2</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">a</property>
+		<!-- 池参数配置 -->
+		<property name="acquireIncrement">3</property>
+		<property name="initialPoolSize">10</property>
+		<property name="minPoolSize">2</property>
+		<property name="maxPoolSize">10</property>
+	</name-config>
+</c3p0-config>

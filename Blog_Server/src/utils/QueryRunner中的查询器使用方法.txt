@@ -1,0 +1,3 @@
+BeanListHandler<T>(Class)   查询返回List<T>集合    将javabean存储在List集合中	（查多个）
+BeanMapHandler<T>(Class)	Map<String,Object>  把一个javabean的数据存在Map中（查一个）
+ScalarHandler<Object>()   查询结果为单行单列    值有一个值
